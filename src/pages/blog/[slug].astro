@@ -28,6 +28,15 @@ const { Content } = await entry.render();
         {entry.data.title}
       </h1>
       <div class="flex gap-2 mt-3 items-center flex-wrap md:flex-nowrap">
+        {
+          entry.data.profilePic && (
+            <img
+              src={entry.data.profilePic.src}
+              alt={entry.data.profilePic.alt}
+              class="w-13 h-13 rounded-full object-cover"
+            />
+          )
+        }
         <span class="text-gray-400">
           {entry.data.author}
         </span>

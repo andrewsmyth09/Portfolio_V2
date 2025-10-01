@@ -17,6 +17,8 @@ profilePic: {
 
 ---
 
+![Featured Image](https://cdn.pixabay.com/photo/2023/05/07/06/10/ai-generated-7975718_1280.png)
+
 Why isn't building a strong foundation being discussed enough to generate high-quality leads on LinkedIn?  
 
 My first guess is AI copycat ninjas, but I'll let you be the judge on that one.

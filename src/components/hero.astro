@@ -5,52 +5,47 @@ import Link from "@/components/ui/link.astro";
 import { Icon } from "astro-icon/components";
 ---
 
-<main
-  class="grid lg:grid-cols-[2fr_1fr] items-center max-w-7xl mx-auto px-6">
-  <div class="py-9 md:order-1 hidden md:block rounded-2xl justify-self-end">
-    <Picture
-  src={heroImage}
-  alt="Smiling professional"
-  widths={[200, 400, 600]}
-  sizes="(max-width: 800px) 100vw, 620px"
-  loading="eager"
-  format="avif"
-  class="rounded-2xl shadow-lg max-w-sm h-auto"
-/>
-
-  </div>
+<main class="grid lg:grid-cols-[2fr_1fr] items-center max-w-7xl mx-auto px-6 py-16 gap-8">
+  <!-- Text Section -->
   <div>
-    <h1
-      class="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight xl:tracking-tighter">
-      Hello There!
+    <h1 class="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight xl:tracking-tighter">
+      Copy That Drives SaaS Growth
     </h1>
-    <p class="text-lg mt-4 text-slate-600 max-w-2xl">
-      Transform your business with cutting-edge copywriting and content
-      strategies. I help companies communicate their value clearly, connect with
-      their audience, and achieve measurable growth through powerful words that
-      convert.
+    <p class="text-lg mt-6 text-slate-600 max-w-2xl leading-relaxed">
+      I help early-stage and funded SaaS startups turn features into benefits, 
+      craft messaging that resonates, and write copy that converts browsers 
+      into users — and users into loyal customers.
     </p>
-    <div class="mt-6 flex flex-col sm:flex-row gap-3">
+    <div class="mt-8 flex flex-col sm:flex-row gap-4">
       <Link
-        href="#"
-        href="https://web3templates.com/templates/astroship-starter-website-template-for-astro"
+        href="https://calendly.com/YOUR-CALENDLY-USERNAME/15min"
         target="_blank"
-        class="flex gap-1 items-center justify-center"
+        class="flex gap-2 items-center justify-center bg-indigo-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-indigo-700 transition"
         rel="noopener">
-        <Icon class="text-white w-5 h-5" name="bx:bxs-cloud-download" />
-
-        Book a 15-minute Consultation
+        <Icon class="text-white w-5 h-5" name="bx:calendar" />
+        Book a 15-Minute Call
       </Link>
+
       <Link
-        size="lg"
-        style="outline"
-        rel="noopener"
-        href="https://github.com/surjithctly/astroship"
-        class="flex gap-1 items-center justify-center"
-        target="_blank">
-        <Icon class="text-black w-4 h-4" name="bx:bxl-github" />
-        Hire Me!
+        href="/portfolio"
+        class="flex gap-2 items-center justify-center border border-slate-300 text-slate-800 px-6 py-3 rounded-lg font-semibold hover:bg-slate-100 transition"
+        rel="noopener">
+        <Icon class="w-5 h-5" name="bx:bxs-briefcase" />
+        View My Work
       </Link>
     </div>
+  </div>
+
+  <!-- Image Section -->
+  <div class="hidden md:block justify-self-end">
+    <Picture
+      src={heroImage}
+      alt="Professional SaaS copywriter"
+      widths={[200, 400, 600]}
+      sizes="(max-width: 800px) 100vw, 620px"
+      loading="eager"
+      format="avif"
+      class="rounded-2xl shadow-lg max-w-sm h-auto"
+    />
   </div>
 </main>

@@ -4,66 +4,57 @@ import { Icon } from "astro-icon/components";
 
 const features = [
   {
-    title: "Bring Your Own Framework",
-    description:
-      "Build your site using React, Svelte, Vue, Preact, web components, or just plain ol' HTML + JavaScript.",
+    title: "Landing Page Copy",
+    description: "Persuasive pages that convert visitors into customers.",
     icon: "bx:bxs-briefcase",
   },
   {
-    title: "100% Static HTML, No JS",
-    description:
-      "Astro renders your entire page to static HTML, removing all JavaScript from your final build by default.",
+    title: "Email Sequences",
+    description: "Engaging campaigns to nurture and retain users.",
     icon: "bx:bxs-window-alt",
   },
   {
-    title: "On-Demand Components",
-    description:
-      "Need some JS? Astro can automatically hydrate interactive components when they become visible on the page.  ",
+    title: "Case Studies",
+    description: "Stories that build trust and showcase your results.",
     icon: "bx:bxs-data",
   },
   {
-    title: "Broad Integration",
-    description:
-      "Astro supports TypeScript, Scoped CSS, CSS Modules, Sass, Tailwind, Markdown, MDX, and any other npm packages.",
+    title: "Messaging & Positioning",
+    description: "Clear brand messaging that resonates with your audience.",
     icon: "bx:bxs-bot",
   },
   {
-    title: "SEO Enabled",
-    description:
-      "Automatic sitemaps, RSS feeds, pagination and collections take the pain out of SEO and syndication. It just works!",
+    title: "Conversion Optimization",
+    description: "Copy that guides users to take action.",
     icon: "bx:bxs-file-find",
   },
   {
-    title: "Community",
-    description:
-      "Astro is an open source project powered by hundreds of contributors making thousands of individual contributions.",
+    title: "Consulting & Feedback",
+    description: "Strategic advice on messaging, tone, and UX copy.",
     icon: "bx:bxs-user",
   },
 ];
+
 ---
 
-<div class="mt-16 md:mt-0">
-  <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
-    Everything you need to start a website
+<div class="mt-16 md:mt-24">
+  <h2 class="text-4xl lg:text-5xl font-bold text-center lg:tracking-tight">
+    How I Can Help Your SaaS
   </h2>
-  <p class="text-lg mt-4 text-slate-600">
-    Astro comes batteries included. It takes the best parts of state-of-the-art
-    tools and adds its own innovations.
+  <p class="text-lg mt-4 text-slate-600 text-center max-w-3xl mx-auto">
+    Clear messaging, persuasive copy, and conversion-focused writing that drives results.
   </p>
+
+  <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-10 mt-12">
+    {features.map((item) => (
+      <div class="flex flex-col items-center bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition text-center">
+        <div class="bg-indigo-600 text-white p-4 rounded-full mb-4 inline-flex">
+          <Icon class="w-6 h-6" name={item.icon} />
+        </div>
+        <h3 class="text-xl font-semibold mb-2">{item.title}</h3>
+        <p class="text-gray-600 leading-relaxed">{item.description}</p>
+      </div>
+    ))}
+  </div>
 </div>
 
-<div class="grid sm:grid-cols-2 md:grid-cols-3 mt-16 gap-16">
-  {
-    features.map((item) => (
-      <div class="flex gap-4 items-start">
-        <div class="mt-1 bg-black rounded-full  p-2 w-8 h-8 shrink-0">
-          <Icon class="text-white" name={item.icon} />
-        </div>
-        <div>
-          <h3 class="font-semibold text-lg">{item.title}</h3>{" "}
-          <p class="text-slate-500 mt-2 leading-relaxed">{item.description}</p>
-        </div>
-      </div>
-    ))
-  }
-</div>

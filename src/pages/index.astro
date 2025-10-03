@@ -1,17 +1,25 @@
 ---
 import Container from "@/components/container.astro";
-import Cta from "@/components/cta.astro";
-import Features from "@/components/features.astro";
-import Hero from "@/components/hero.astro";
-import Logos from "@/components/logos.astro";
 import Layout from "@/layouts/Layout.astro";
+
+import Hero from "@/components/hero.astro";
+import WhyCopywriter from "@/content/index/why-copywriter.astro";
+import Features from "@/components/features.astro";
+import Services from "@/content/index/services.astro";
+import Portfolio from "@/content/index/portfolio.astro";
+import Cta from "@/components/cta.astro";
+import BlogPreview from "@/content/index/blog-preview.astro";
+import ContactSection from "@/content/index/contact-section.astro";
 ---
 
-<Layout title="">
+<Layout title="Home">
   <Container>
     <Hero />
+    <WhyCopywriter />
     <Features />
-    <Logos />
+    <Portfolio />
     <Cta />
+    <BlogPreview />
+    <ContactSection />
   </Container>
 </Layout>

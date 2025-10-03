@@ -1,0 +1,33 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Container from "@/components/container.astro";
+import Sectionhead from "@/components/sectionhead.astro";
+---
+
+<Layout title="Portfolio">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">Portfolio</Fragment>
+      <Fragment slot="desc">Examples of my SaaS copywriting and content work.</Fragment>
+    </Sectionhead>
+
+    <div class="mt-16 grid gap-8 md:grid-cols-2">
+      <div class="p-6 bg-gray-50 rounded-lg shadow-md">
+        <h3 class="font-semibold text-xl mb-2">Startup Landing Page</h3>
+        <p>Redesigned homepage copy for a funded SaaS startup, increasing sign-ups by 25%.</p>
+      </div>
+      <div class="p-6 bg-gray-50 rounded-lg shadow-md">
+        <h3 class="font-semibold text-xl mb-2">Product Messaging Guide</h3>
+        <p>Created clear product positioning for a new SaaS tool to simplify complex features.</p>
+      </div>
+      <div class="p-6 bg-gray-50 rounded-lg shadow-md">
+        <h3 class="font-semibold text-xl mb-2">Email Campaign Series</h3>
+        <p>Developed an automated email flow to nurture leads and improve activation rates.</p>
+      </div>
+      <div class="p-6 bg-gray-50 rounded-lg shadow-md">
+        <h3 class="font-semibold text-xl mb-2">Blog & SEO Articles</h3>
+        <p>Wrote blog posts that increased organic traffic and positioned the company as an authority.</p>
+      </div>
+    </div>
+  </Container>
+</Layout>

@@ -1,0 +1,48 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Container from "@/components/container.astro";
+import Sectionhead from "@/components/sectionhead.astro";
+---
+
+<Layout title="Process">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">My Process</Fragment>
+      <Fragment slot="desc">A clear, step-by-step approach to creating copy that converts.</Fragment>
+    </Sectionhead>
+
+    <div class="mt-16 space-y-8">
+      <div class="flex items-start gap-4">
+        <div class="text-xl font-bold text-[#AFFF00]">1.</div>
+        <div>
+          <h3 class="font-semibold text-lg mb-1">Discovery</h3>
+          <p>Understand your product, audience, and goals to create tailored messaging.</p>
+        </div>
+      </div>
+
+      <div class="flex items-start gap-4">
+        <div class="text-xl font-bold text-[#AFFF00]">2.</div>
+        <div>
+          <h3 class="font-semibold text-lg mb-1">Strategy</h3>
+          <p>Plan your messaging, positioning, and content structure for maximum impact.</p>
+        </div>
+      </div>
+
+      <div class="flex items-start gap-4">
+        <div class="text-xl font-bold text-[#AFFF00]">3.</div>
+        <div>
+          <h3 class="font-semibold text-lg mb-1">Writing</h3>
+          <p>Craft copy that resonates with your audience and drives them to act.</p>
+        </div>
+      </div>
+
+      <div class="flex items-start gap-4">
+        <div class="text-xl font-bold text-[#AFFF00]">4.</div>
+        <div>
+          <h3 class="font-semibold text-lg mb-1">Refinement</h3>
+          <p>Polish the copy with feedback and ensure it aligns perfectly with your brand.</p>
+        </div>
+      </div>
+    </div>
+  </Container>
+</Layout>

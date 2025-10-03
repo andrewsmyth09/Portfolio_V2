@@ -8,29 +8,40 @@ import { Icon } from "astro-icon/components";
 <main class="grid lg:grid-cols-[2fr_1fr] items-center max-w-7xl mx-auto px-6 py-16 gap-8">
   <!-- Text Section -->
   <div>
-    <h1 class="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight xl:tracking-tighter">
-      Copy That Drives SaaS Growth
-    </h1>
-    <p class="text-lg mt-6 text-slate-600 max-w-2xl leading-relaxed">
-      I help early-stage and funded SaaS startups turn features into benefits, 
-      craft messaging that resonates, and write copy that converts browsers 
-      into users — and users into loyal customers.
-    </p>
+    <h1 class="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight xl:tracking-tighter text-black">
+  Copy That Drives SaaS Growth
+</h1>
+<p class="text-lg mt-6 text-gray-800 max-w-2xl leading-relaxed">
+  I help early-stage and funded SaaS startups turn features into benefits, 
+  craft messaging that resonates, and write copy that converts browsers 
+  into users — and users into loyal customers.
+</p>
+
+
+    <!-- Buttons -->
     <div class="mt-8 flex flex-col sm:flex-row gap-4">
+      <!-- Primary Button -->
       <Link
         href="https://calendly.com/YOUR-CALENDLY-USERNAME/15min"
         target="_blank"
-        class="flex gap-2 items-center justify-center bg-indigo-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-indigo-700 transition"
-        rel="noopener">
-        <Icon class="text-white w-5 h-5" name="bx:calendar" />
+        class="flex gap-2 items-center justify-center bg-[#AFFF00] text-black px-6 py-3 rounded-lg font-semibold hover:brightness-90 transition"
+        rel="noopener"
+      >
+        <span class="w-5 h-5 flex items-center justify-center text-black">
+          <Icon size={20} name="bx:calendar" />
+        </span>
         Book a 15-Minute Call
       </Link>
 
+      <!-- Secondary Button -->
       <Link
         href="/portfolio"
-        class="flex gap-2 items-center justify-center border border-slate-300 text-slate-800 px-6 py-3 rounded-lg font-semibold hover:bg-slate-100 transition"
-        rel="noopener">
-        <Icon class="w-5 h-5" name="bx:bxs-briefcase" />
+        class="flex gap-2 items-center justify-center border border-slate-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-slate-800 transition"
+        rel="noopener"
+      >
+        <span class="w-5 h-5 flex items-center justify-center text-white">
+          <Icon size={20} name="bx:bxs-briefcase" />
+        </span>
         View My Work
       </Link>
     </div>

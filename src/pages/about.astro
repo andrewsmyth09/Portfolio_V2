@@ -7,8 +7,10 @@ import Sectionhead from "@/components/sectionhead.astro";
 
 // Filter team entries with 'draft: false' & date before current date
 const publishedTeamMembers = await getCollection("team", ({ data }) => {
-  return !data.draft && data.publishDate < new Date();
+  // Only include if publishDate exists and is before now
+  return !data.draft && data.publishDate && data.publishDate < new Date();
 });
+
 ---
 
 <Layout title="About">

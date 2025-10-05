@@ -6,11 +6,15 @@ import Container from "@/components/container.astro";
 import Sectionhead from "@/components/sectionhead.astro";
 
 // Filter team entries with 'draft: false' & date before current date
-const publishedTeamMembers = await getCollection("team", ({ data }) => {
-  // Only include if publishDate exists and is before now
-  return !data.draft && data.publishDate && data.publishDate < new Date();
+const publishedTeamMembers = (
+  await getCollection("team", ({ data }) => {
+    return !data.draft && data.publishDate && data.publishDate < new Date();
+  })
+).sort((a, b) => {
+  const dateA = new Date(a.data.publishDate || 0).valueOf();
+  const dateB = new Date(b.data.publishDate || 0).valueOf();
+  return dateA - dateB; // Longest first
 });
-
 ---
 
 <Layout title="About">
@@ -30,7 +34,7 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
         the job. This is what makes our team so special.
       </p>
     </div>
-    <div class="grid md:grid-cols-3 gap-10 mx-auto max-w-4xl mt-12">
+    <div class="grid md:grid-cols-4 gap-10 mx-auto max-w-4xl mt-12">
       {
         publishedTeamMembers.map((teamMemberEntry) => (
           <div class="group">

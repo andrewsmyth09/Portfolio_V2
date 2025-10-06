@@ -11,7 +11,7 @@ category: "Tutorials"
 author: "Andrew Smyth"
 tags: [webdev, tailwindcss, frontend]
 profilePic: {
-  src: "https://images.unsplash.com/photo-1580489944761-15a19d654956?&fit=crop&w=280",
+  src: "https://pbs.twimg.com/profile_images/1965830284818972672/TIyvu5mR_400x400.jpg",
   alt: "Andrew Smyth"
 }
 

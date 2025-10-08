@@ -82,10 +82,14 @@ strong, b {
 
 
 .menu-slanted {
-  background-color: #A3F4B7;          /* test color for visibility */
+  background: linear-gradient(145deg, #baf5ca 0%, #90e8a0 100%);
   clip-path: polygon(6% 0, 100% 0, 100% 100%, 0 100%);
-  padding: 0.75rem 1.5rem;          /* optional: adjust inner spacing */
+  padding: 0.75rem 1.5rem;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
 }
+
+
+
 
 /* Remove background boxes behind menu items */
 .menu-slanted li,
